@@ -1,0 +1,19 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/songwell1024/config-repo
+          username: songwell1024
+          password: zySong19940709
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
